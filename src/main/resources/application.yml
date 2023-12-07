@@ -1,15 +1,15 @@
 spring:
   datasource:
-    url: jdbc:sqlserver://javatechie.database.windows.net:1433;database=javatechiedb;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
-    username: javatechie
-    password: password@123
+    url: jdbc:mysql://chatroom-bdd.mysql.database.azure.com:3306/chatroom?useSSL=true
+    username: bhfr4
+    password: RaphHugFabBru4-
   jpa:
-    show-sql: true
+    show-sql: false
     hibernate:
       ddl-auto: update
-      dialect : org.hibernate.dialect.SQLServer2012Dialect
+      dialect: org.hibernate.dialect.SQLServer2012Dialect
 
 server:
-  port: 9191
+  port: 8080
 
 
